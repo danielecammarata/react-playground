@@ -1,0 +1,21 @@
+{
+  "name": "react-playground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "browserify": "^12.0.1",
+    "babelify": "^7.2.0",
+    "babel-preset-react": "^6.1.2",
+    "react": "^0.14.2",
+    "watchify": "^3.6.0"
+  },
+  "devDependencies": {
+    "react-dom": "^0.14.2"
+  },
+  "scripts": {
+    "watch": "watchify -t [ babelify --presets [ react ] ] ./src/app.jsx -o ./dist/bundle.js -v"
+  },
+  "author": "",
+  "license": "ISC"
+}
